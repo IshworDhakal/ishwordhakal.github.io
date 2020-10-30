@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1140px;
+	margin: auto;
+	
+}
+.row{
+	display: flex;
+	flex-wrap: wrap
+}
+ .section-title{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+.section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700px;
+	color: #ffffff;
+	margin: 0 0 10px;
+	position: relative;
+}
+ .section-title h1:before{
+	content: '';
+	left: 0;
+	position: absolute;
+	height: 2px;
+	right: 30px;
+	background-color: #febd01;
+	bottom: 0px ;  
+}
+.text-center{
+	text-align: center!important;
+}
+.text-left{
+	text-align: left!important;
+}
+.text-right{
+	text-align: right!important;
+	}
+	/*Header*/
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid #423940;
+	padding: 0px 15px;
+	z-index:11;
+}
+header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+	background-color: #eeeeee;
+	animation: fixHeader .5s ease;
+	}
+@keyframes fixHeader{
+	0%{
+		transform: translate(-100%);
+	}
+	100%{
+		transform: translate(-0%);
+	}
+}
+header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+header .brand-name a{
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 600;
+	color: black;
+	text-transform: uppercase;
+	position: relative;
+}
+header.fixed .brand-name a{
+	color: black;
+}
+header .brand-name a::before{
+	content:'';
+	height: 3px;
+	background-color: #ffffff;
+	width: 100%;
+	left: 0px;
+	bottom:0px;
+}
+header .navbar{
+}
+header .navbar ul{
+	list-style: 0;
+	padding: 0;
+	margin: 0;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 35px;
+}
+header .navbar ul li a{
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 72px;
+	color: black;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+header.fixed .navbar ul li a{
+	color: blue;
+	background-color: black;
+
+}
+header .navbar ul li a::before{
+	content:'';
+	height: 3px;
+	background-color: black;
+	width: 0%;
+	position: absolute;
+	right: : 0px;
+	bottom: -1px;
+	transition: all .5s ease;
+}
+header.fixed .navbar ul li a::before{
+background-color: #febd01;
+}
+header .navbar ul li a:hover:before{
+	width: 100%;
+	left: 0;
+}
+header .navbar ul li a.active::before{
+	width: 100%;
+	left: 0;
+}
+/*Home Section*/
+.home{
+	min-height: 100vh;
+	background-image: url("C:/Users/iswor/OneDrive/Desktop/2019-20 A CC4057NT A3 CW Ishwor Prasad Dhakal 19031665/2019-20 A CC4057NT A3 Program File Ishwor Prasad Dhakal 19031665/img/34.jpg");
+ background-size:cover;
+ background-position: center;
+ padding: 15px;
+}
+.home .full-screen{ 
+	min-height: 100vh;
+}
+.home .home-content{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home .home-content .block{ 
+	flex: 0 0 75%;
+	max-width:75%;
+	padding-left: 35px;
+	border-left: 5px solid #ffffff;
+	margin-top: 50px;
+}
+.home .home-content .block h6{
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block h1{
+    color: #ffffff;
+	font-size: 70px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block h3{
+color: #ffffff;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+.home .home-content .block .cv-btn{
+	padding-top:20px; 
+}
+.home .home-content .block .cv-btn a{
+border-radius: 4px;
+color: #ffffff;
+border: solid #ffffff;
+padding: 12px 25px;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+text-transform: uppercase;
+font-weight: 600;
+transition: all .5s ease;
+background-color: transparent;
+}
+.home .home-content .block .cv-btn a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+/*About Me started*/
+.about-me{
+padding: 100px 15px;
+background-color: skyblue;
+}
+.skills .section-title p{
+	font-size: 20px;
+}
+.about-me h1{
+	color: black;
+}
+.about-me p{
+   font-size: 20px;
+}
+.text-uppercase{
+	text-transform: uppercase !important; 
+
+}
+.about-me .section-title p.small{
+	display: block;
+	font-size: 14px;
+	color: #838383;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.about-me .about-content{ 
+}
+.about-me .about-content .img{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+.about-me .about-content .img img{
+	width: 60%;
+
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.about-me .about-content .text{
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+	padding-left: 40px;
+}
+.about-me .about-content .text h4{
+	font-size: 25px;
+	font-weight: 600;
+	margin: 0 0 5px;
+	color: #000000;
+}
+.about-me .about-content .text h6{
+font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 15px;
+	color: #000000;
+}
+/*Servies*/
+
+.services{
+ background-image: url("C:/Users/iswor/OneDrive/Desktop/2019-20 A CC4057NT A3 CW Ishwor Prasad Dhakal 19031665/2019-20 A CC4057NT A3 Program File Ishwor Prasad Dhakal 19031665/img/15.jpg");
+	padding: 100px 15px 70px;
+} 
+.services h1{
+	color: black;
+}
+.services .section-title h1:before{
+	left: 30%;
+} 
+.services .service-content{
+	flex: 0 0 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.services .service-content .box{
+	background-color: #ffffff;
+	padding: 10px;
+	flex: 0 0 calc(33.33% -15px);
+	max-width: calc(33.33% -20px); 
+	margin-bottom: 30px;
+	border: 10px solid #eeeeee;
+	text-align: center;
+	position: relative;
+	border-radius: 5px;
+}
+.services .service-content .box::before{
+	content: '';
+	height: 2px;
+	background-color: #febd01;
+	position: absolute;
+	bottom: 0px;
+	width: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transition: all .5s ease;
+}
+.services .service-content .box:hover:before{
+	width: 100%;
+}
+.services .service-content .box p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: black;
+	margin: 0 0 20px;
+}
+.services .service-content .box .icon{
+	height: 60px;
+	width: 60px;
+	background-color: #febd01;
+	margin: 10px auto 20px;
+	border-radius: 50%;
+	text-align: center;
+}
+.services .service-content .box .fa{
+	font-size: 25px;
+	color: #ffffff;
+	line-height: 60px;
+}
+.services .service-content .box h5{
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	margin: 0;
+}
+.services .services-content .box p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #838383;
+	margin: 10px 0 10px;
+}
+/*Skills*/
+
+.skills{
+	padding: 100px 15px;
+	background-color: #ffffff;
+}
+.skills .skills-content{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.skills .img{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+.align-items-center{
+align-items: center;
+}
+.skills .img img{
+	width: 75%;
+	display: block;
+}
+.skills .skills-content .section-title h5{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.skills .skills-content .section-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #838383;
+	margin: 15px 0 0px;
+}
+.skills .skills-content .skill-box{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+.skills .skills-content .skill-box h6{
+	font-size: 16px;
+	font-weight: 500;
+	color: #000000;
+	margin: 0 0 8px;
+}
+.skills .skills-content .skill-box .skill-bar{
+	height: 5px;
+	background-color: #eeeeee;
+	position: relative;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+	background-color: #febd01;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+	color: #838383;
+	font-size: 16px;
+	font-weight: 400;
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
+.about-me .about-content .text h6 span{
+	color: #febd01;
+}
+.about-me .about-content .text p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #838383;
+	margin: 0 0 20px;
+}
+.about-me .about-content .text .info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about-me .about-content .text .info .list{
+	flex: 0 0 calc(50% -15px);
+	max-width: calc(50% -15px);
+	margin-top: 10px;
+	display: flex;
+	border-bottom: 1px solid #dee2e6;
+	padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list label{
+	padding-right: 10px;
+	color: #000000;
+	font-weight: 600;
+	font-size: 15px;
+}
+.about-me .about-content .text .info .list p{
+	margin: 0;
+}
+/*Portfolio Works*/
+
+.portfolio{
+	background-color: #f5f8fd;
+	padding: 100px 7px;
+}
+.portfolio .section-title h1{
+	color: black;
+
+
+}
+.portfolio .section-title h1:before{
+	left: 30%;
+}
+.portfolio .filter-buttons{
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.portfolio .filter-buttons ul{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.portfolio .filter-buttons ul li{
+	color: #000000;
+	font-weight: 500;
+	font-size: 15px;
+	display: inline-block;
+	margin: 0px 8px;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding-bottom: 0px;
+}
+.portfolio .filter-buttons ul li.active{
+	color: #febd01;
+	border-bottom: 2px solid #febd01;
+}
+.portfolio .portfolio-buttons{
+	margin-bottom: 25px;
+}
+.portfolio .portfolio-gallery{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	padding: 8px;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+}
+.portfolio .portfolio-gallery .item{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	position: relative;
+}
+.portfolio .portfolio-gallery .item .inner{
+	position: relative;
+}
+.portfolio .portfolio-gallery .item img{
+	width: 100%;
+	display: block;
+}
+.portfolio .portfolio-gallery .item .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(0,0,0,0.6);
+	z-index: 10; 
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.portfolio .portfolio-gallery .item:hover .overlay{
+   opacity: 1;
+}
+.portfolio .portfolio-gallery .item .overlay .fa{
+	 height: 50px;
+	 width: 50px;
+	 background-color: #febd01;
+	 color: #ffffff;
+	 display: inline-block;
+	 text-align: center;
+	 line-height: 50px;
+	 border-radius: 50%;
+	 cursor: pointer;
+	 
+}
+.portfolio .portfolio-gallery .item:hover .overlay .fa{
+       -webkit-animation: galleryIcon .8s ease;
+       animation: galleryIcon .8s ease;
+   }
+@keyframes galleryIcon{
+	0%{
+		transform: translate(-20px);opacity: 0;
+	}
+	100%{
+		transform: translate(0);opacity: 1;
+	}
+}
+.portfolio .portfolio-gallery .item .overlay h4{
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 600;
+}
+.portfolio .portfolio-gallery .item:hover .overlay h4{
+	-webkit-animation: galleryText .8s ease;
+	animation: galleryIcon .8s ease;
+}
+@keyframes galleryText{
+	0%{
+		transform: translate(20px);opacity: 0;
+	}
+	100%{
+		transform: translate(0);opacity: 1;
+	}
+}
+/*lightbox*/
+.lightbox{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	display: flex;
+	background-color: rgba(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+}
+.lightbox.show{
+	display: flex;
+}
+.lightbox.hide{
+	display: none;
+}
+.lightbox .close-lightbox{
+	height: 35px;
+	width: 35px;
+	background-color: #ffffff;
+	color: #febd01;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 101;
+}
+.lightbox img{
+	max-width: 90%;
+	max-height: 80%;
+	display: block;
+}
+/*message text*/
+.message-text{
+	background-color: #0c0c17;
+	padding: 40px 15px;
+}
+.message-text .text{
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+
+}
+.message-text .text h2{
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 35px;
+}
+.message-text .button{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	text-align: right;
+}
+.message-text .button a{
+    border-radius:4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.message-text .button a:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+/*Blogs*/
+.blogs{
+	padding: 100px 15px;
+	background-color: black;
+}
+.blogs h2{
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.blogs h1{
+	color: blue;
+}
+.blogs p{
+	color: white;
+}
+.blogs .section-title h1:before{
+	left: 30%;
+}
+.blogs .blogs-content .box .img img{
+	width: 100%;
+     display: block;
+}
+/*Contact-us*/
+
+.contact-us{
+	padding:100px 15px;
+	background-image: url("C:/Users/iswor/OneDrive/Desktop/2019-20 A CC4057NT A3 CW Ishwor Prasad Dhakal 19031665/2019-20 A CC4057NT A3 Program File Ishwor Prasad Dhakal 19031665/img/14.jpg");
+}
+.contact-us .section-title h1:before{
+	left: 30%;
+}
+.contact-title h1{
+	padding-right: 15px;
+}
+form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out; 
+}
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input{
+	height: 45px;
+}
+form .submit{
+	background-color: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px; 
+}
+form .submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+/*Footer*/
+footer{
+	padding: 70px 15px;
+	background-color: #0c0c17;
+}
+footer .logo{
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	font-size: 45px;
+	color: #ffffff;
+	font-weight: 900;
+}
+footer .social{
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+footer .social a{
+	color: #999999;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 12px;
+	transition: all .5s ease;
+	text-decoration: none;
+
+}
+footer .social a:hover{
+	color: #ffffff;
+}
+/*copyright*/
+.copyright{
+	background-color: #0c0c17;
+	border-top: 1px solid #1d1d27;
+}
+.copyright p{
+	color: #838383;
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+}
+/* Research*/
+.research{
+	background-color: skyblue;
+}
+.research .section-title h2{
+	text-transform: uppercase;
+	color: black;
+}
+.research h1{
+	color: black;
+}
+.research .section-title h2{
+	text-transform: uppercase;
+	color: black;
+}
+.social-links a{
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+footer .social a{
+	color: #999999;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0px 12px;
+	transition: all .5s ease;
+	text-decoration: none;
+
+}
+footer .social a:hover{
+	color: #ffffff;
+}
+
+@media(max-width: 991px){
+	.home .home-content .block h1{
+		font-size: 50px;
+	}
+}
+@media(max-width: 767px){
+	.home .home-content .block h1{
+		font-size: 40px;
+	}
+	.home .home-content .block h3{
+		font-size: 25px;
+	}
+	header{
+		padding: 15px;
+		position: fixed;
+		background-color: #ffffff;
+		border: none;
+		border-bottom:1px solid #eeeeee;
+	}
+	header .brand-name{
+		color: #000000;
+	}
+	.ham-burger .fa{
+		display: inline-block;
+	}
+	.navbar{
+		position: absolute;
+		background-color: #ffffff;
+		width: 100%;
+		left: 0px;
+		top: 82px;
+		padding: 15px;
+		border-top: 1px solid #eeeeee;
+		display: none;
+		border-bottom:1px solid #eeeeee;
+	}
+	.navbar.show{
+		display: block;
+	}
+	header .navbar ul li{
+		display: block;
+		margin-left: 0;
+	}
+	header .navbar ul li a{
+		line-height: 42px;
+		color: #000000;
+	}
+	header .navbar ul li a::before{
+		background-color: #febd01;
+	}
+.about-me .about-content .text{
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-left: 0px;
+	padding-top: 30px;
+}
+.services .service-content .box{
+	background-color: #ffffff;
+	padding: 30px;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+}
+@media(max-width: 500px){
+	.home .home-content .block h1{
+		font-size: 30px;
+	}
+	.home .home-content .block h3{
+		font-size: 20px;
+	}
+	.home .home-content .block{
+		padding-left:20px;
+	}
